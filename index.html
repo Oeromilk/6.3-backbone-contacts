@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>6 3 backbone contacts</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <h1 class = "col-md-12 well text-center">Contacts App</h1>
+          <div id = "instructions" class="col-md-12">
+
+          </div>
+            <div class="app">
+
+            </div>
+          <div class="table-temp">
+
+          </div>
+
+      </div>
+
+
+      <div id="confirm-modal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Do you really want to remove this contact?</h4>
+              <div class="modal-body">
+                <button id="close=header" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button id="delete-contact" type="button" class="btn btn-danger">Delete Contact</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resubmit-modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header modal-lg">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Update the contact info.</h4>
+
+              <form>
+                <div class="form-group">
+                  <label for="input-email" class="col-sm-2 control-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" placeholder="youremail@mail.com">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="input-name" class="col-sm-2 control-label">Name</label>
+                  <div class="col-sm-10">
+                    <input type="name" class="form-control" id="name" placeholder="First Name Last Name">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="input-phone-number" class="col-sm-2 control-label">Phone Number</label>
+                  <div class="col-sm-10">
+                    <input type="phonenumber" class="form-control" id="phone-number" placeholder="555-555-5555">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="input-twitter" class="col-sm-2 control-label">Twitter Username</label>
+                  <div class="col-sm-10">
+                    <input type="twiiter" class="form-control" id="twitter-username" placeholder="@username">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-10">
+                    <button class="addContact" type="submit" class="btn btn-default">Submit Contact</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+
+    </div>
+
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
